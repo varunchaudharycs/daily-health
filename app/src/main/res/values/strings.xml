@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Daily Health Checkup</string>
+    <string name="find_heart_rate">Find Heart Rate</string>
+
+    <!-- Strings used for signs dropdown options -->
+    <string-array name="symptoms_list">
+        <item>Nausea</item>
+        <item>Headache</item>
+        <item>Diarrhea</item>
+        <item>Sore throat</item>
+        <item>Fever</item>
+        <item>Muscle ache</item>
+        <item>Loss of smell or taste</item>
+        <item>Cough</item>
+        <item>Shortness of breath</item>
+        <item>Tiredness</item>
+    </string-array>
+    <string-array name="users">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    <string name="title_activity_contact_finder">ContactFinder</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

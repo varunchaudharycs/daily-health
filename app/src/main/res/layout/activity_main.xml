@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/symptoms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#FFC107"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="Symptoms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/measure_heart_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#FFC107"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="@string/find_heart_rate"
+        app:layout_constraintEnd_toStartOf="@+id/measure_respiratory_rate"
+        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heart_rate" />
+
+    <Button
+        android:id="@+id/measure_respiratory_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#FFC107"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="Find Respiratory Rate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/respiratory_rate" />
+
+    <Button
+        android:id="@+id/get_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#FFC107"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="Find Location"
+        app:layout_constraintEnd_toStartOf="@+id/goto_contact_graph"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/longtitude" />
+
+    <Button
+        android:id="@+id/goto_contact_graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="#FFC107"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="Contact Graph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/measure_respiratory_rate" />
+
+    <Button
+        android:id="@+id/upload_signs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:background="#673AB7"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="SAVE SIGNS"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/upload"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/get_location"
+        app:layout_constraintVertical_bias="0.509" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#673AB7"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="Upload"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goto_contact_graph"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <TextView
+        android:id="@+id/heart_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="#57F6FBFB"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:text="0.0"
+        android:textColor="#050505"
+        app:layout_constraintEnd_toStartOf="@+id/respiratory_rate"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoFrame" />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="#57F6FBFB"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:text="0.0"
+        android:textColor="#050505"
+        app:layout_constraintBottom_toTopOf="@+id/get_location"
+        app:layout_constraintEnd_toStartOf="@+id/longtitude"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/measure_heart_rate"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/respiratory_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:text="0.0"
+        android:textColor="#070707"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoFrame" />
+
+    <TextView
+        android:id="@+id/longtitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:text="0.0"
+        android:textColor="#070707"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.299"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/measure_heart_rate" />
+
+    <FrameLayout
+        android:id="@+id/videoFrame"
+        android:layout_width="224dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symptoms">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
